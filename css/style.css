@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+:root{
+    font-size: 16px;
+}
+.navbar{
+    height: 12vh;
+    width: 100vw;
+    background-color: lightgray;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    
+}
+.navbar::before{
+    position: absolute;
+    content: "";
+    top: 33%;
+    right: 50%;
+    left: 20%;
+    bottom: 0;
+    border-radius: 50%;
+    height: 12vh;
+    width: 66vw;
+    background-color: lightgray;
+}
+a {
+    text-decoration: none;
+    color: black;
+
+  }
+.subnav{
+    color:black;
+    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    z-index: 1;
+    margin: 2vh;
+}
+.subnavbtn{
+    background-color: inherit;
+    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    margin: 2vh;
+
+}
+.list-item{
+    list-style: none;
+    margin: 2vh;
+    color: black;
+    border: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+
+}
+.subnav-content {
+    width: 12vw;
+    display: none;
+    position: absolute;
+
+}
+
+.subnav:hover .subnav-content {
+    transition: all 3s ease-in-out;
+    display: block;
+
+}
+.list-item:hover{
+    background-color: orange;
+    transition: all 3s ease-in-out;
+
+}
+a:hover{
+    background-color: orange;
+
+    transition: all 3s ease-in-out;
+
+}
+.water{
+    width: 44vw;
+    height: 44vh;
+    background-color: gray;
+    border-radius: 20%;
+    position: absolute;
+    bottom:  -5%;
+    right: -12%;
+    transform: rotate(-50deg);
+    z-index: 1;
+}
+.foot{
+    width: 99vw;
+    height: 12vh;
+    background-color: rgb(251, 255, 0);
+    position: absolute;
+    bottom:  -1%;
+
+}
+.foot::after{
+    position: absolute;
+    content:"";
+    top: -6vh;
+    bottom: 0;
+    right: 0;
+    left: 4vw;
+    height: 0;
+    width: 0; ;
+ border-bottom: 4rem rgb(251, 255, 0) solid;
+ border-right: 4rem transparent solid;
+ border-left: 4rem transparent solid;
+}
